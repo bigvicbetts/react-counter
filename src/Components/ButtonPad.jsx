@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default function ButtonPad() {
-    return (
-        <div>
-            <button>Up Button</button>
-            <button>Down Button</button>
-        </div>
-    )
+export default function ButtonPad(props) {
+  return (
+    <div>
+      <button onClick={props.plusNum}>+</button>
+      <button onClick={props.minusNum}>-</button>
+      <button onClick={props.setZero}>0</button>
+    </div>
+  );
 }
